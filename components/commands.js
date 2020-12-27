@@ -23,6 +23,6 @@ const commands = {
     bot.say(channel, `/color ${message}`);
   }*/
 }
-console.log(message);
+console.log(message.replace('!', ''));
 // Exporta os comandos para serem usados no index.js;
 module.exports = commands; 
