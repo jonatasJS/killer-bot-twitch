@@ -36,7 +36,7 @@ bot.on('chat', (channel, tag, message, self) => {
   const command = args.shift().toLowerCase();
   
   // Exporta algumas váriaveis para o "./components/commands.js" poder funcionar corretamente;
-  const chat = {
+  let chat = {
     bot,
     channel,
     message,
