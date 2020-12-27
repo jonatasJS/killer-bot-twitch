@@ -24,6 +24,7 @@ const commands = {
   },
   setcolor() {
     let messageE = message.replace('!setColor', '').replace(' ', '');
+    console.log(messageE);
     let Colors = [ 'lue', 'BlueViolet', 'CadetBlue', 'Chocolate', 'Coral', 'DodgerBlue', 'Firebrick', 'GoldenRod', 'Green', 'HotPink', 'OrangeRed', 'Red', 'SeaGreen', 'SpringGreen', 'YellowGreen' ]
     
     if(Colors.includes(messageE)) {
