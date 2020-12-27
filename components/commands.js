@@ -4,7 +4,7 @@ const chat = require('../server');
 // Separa as informaçoes obtidas do index.js;
 const bot = chat.bot;
 const channel = chat.channel;
-const message = chat.message;
+let message = chat.message;
 const tag = chat.tag;
 
 // Váriavel que contem todos os comandos e as açoes dos mesmos;
