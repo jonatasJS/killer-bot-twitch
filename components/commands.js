@@ -30,12 +30,12 @@ const commands = {
       if(tag['display-name'] == 'sozinhol' || tag['display-name'] == 'sozinhoL') {
         console.log(messageE);
         bot.say(channel, `/color ${messageE}`);
-        bot.say(channel, `Certo! Cor mudada para **${messageE}**`);
+        bot.say(channel, `Certo! Cor mudada para ${messageE}`);
       } else {
         bot.say(channel, 'Voce nao tem permissao para usar esse comando!');
       }
     } else {
-      bot.say(channel, `A cor **${messageE}** não existe!`);
+      bot.say(channel, `A cor ${messageE} não existe!`);
     }
   }
 }
