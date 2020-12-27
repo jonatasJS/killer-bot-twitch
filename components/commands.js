@@ -23,6 +23,7 @@ const commands = {
     let messageE = message.replace('!color', '');
     if(tag['display-name'] == 'sozinhol' || tag['display-name'] == 'sozinhoL') {
       bot.say(channel, `/color ${messageE}`);
+      bot.say(channel, `Certo! Cor mudada para ${messageE}`);
     } else {
       bot.say(channel, 'Voce nao tem permissao para usar esse comando!');
     }
