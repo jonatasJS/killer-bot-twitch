@@ -39,6 +39,7 @@ bot.on('chat', (channel, tag, message, self) => {
   const chat = {
     bot,
     channel,
+    message,
     tag
   }
   module.exports = chat;
