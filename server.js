@@ -13,9 +13,9 @@ const bot = new tmi.Client({
   // Indentificação;
   identity: {
     // Nome do bot;
-    username: config.userName,
+    username: process.env.userName,
     // Senha/Oauth de uma conta SÓ para o bot;
-    password: config.token
+    password: process.env.token
   },
   // Canais em que ele possui acesso;
   channels: config.channels
@@ -24,7 +24,7 @@ const bot = new tmi.Client({
 // Execultar oc comandos;
 bot.on('chat', (channel, tag, message, self) => {
   // Verifica o prefixo;
-  if(self || !message.startsWith(config.prefix) || tag['display-name'] === 'wallker_l') return;
+  if(self || !message.startsWith(process.env.prefix) || tag['display-name'] === 'wallker_l') return;
   // verifica os argumentos e remove espaços;
   const args = message.slice(1).split(' ');
   // Converte os comandos para letra menuscula para melhor eficiência do script;
