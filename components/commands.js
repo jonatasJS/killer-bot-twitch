@@ -22,6 +22,7 @@ const commands = {
   color() {
     let messageE = message.replace('!color', '');
     if(tag['display-name'] == 'sozinhol' || tag['display-name'] == 'sozinhoL') {
+      console.log(messageE);
       bot.say(channel, `/color ${messageE}`);
       bot.say(channel, `Certo! Cor mudada para ${messageE}`);
     } else {
