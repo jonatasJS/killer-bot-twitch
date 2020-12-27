@@ -21,6 +21,10 @@ const bot = new tmi.Client({
   channels: config.channels
 });
 
+client.on('connected', (channel, tag, message, self) => {
+  
+});
+
 // Execultar oc comandos;
 bot.on('chat', (channel, tag, message, self) => {
   // Verifica o prefixo;
