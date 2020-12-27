@@ -24,12 +24,18 @@ const commands = {
   },
   setColor() {
     let messageE = message.replace('!setColor', '');
-    if(tag['display-name'] == 'sozinhol' || tag['display-name'] == 'sozinhoL') {
-      console.log(messageE);
-      bot.say(channel, `/color ${messageE}`);
-      bot.say(channel, `Certo! Cor mudada para ${messageE}`);
+    let colors = [ 'lue', 'BlueViolet', 'CadetBlue', 'Chocolate', 'Coral', 'DodgerBlue', 'Firebrick', 'GoldenRod', 'Green', 'HotPink', 'OrangeRed', 'Red', 'SeaGreen', 'SpringGreen', 'YellowGreen' ]
+    
+    if(colors.includes(messageE)) {
+      if(tag['display-name'] == 'sozinhol' || tag['display-name'] == 'sozinhoL') {
+        console.log(messageE);
+        bot.say(channel, `/color ${messageE}`);
+        bot.say(channel, `Certo! Cor mudada para ${messageE}`);
+      } else {
+        bot.say(channel, 'Voce nao tem permissao para usar esse comando!');
+      }
     } else {
-      bot.say(channel, 'Voce nao tem permissao para usar esse comando!');
+      bot.say(channel, `A cor ${messageE} não existe!`);
     }
   }
 }
