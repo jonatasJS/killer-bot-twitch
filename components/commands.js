@@ -18,11 +18,16 @@ const commands = {
   },
   cmds() {
     bot.say(channel, `/me @${tag['display-name']} Eles são: !pc, !comandos ou !cmds`);
+  },
+  color() {
+    let messageE = message.replace('!', '');
+    if(tag['display-name'] == 'sozinhol' || tag['display-name'] == 'sozinhoL') {
+      bot.say(channel, `/color ${messageE}`);
+    } else {
+      bot.say(channel, 'Voce nao tem permissao para usar esse comando!');
+    }
   }
-  /*color() {
-    bot.say(channel, `/color ${message}`);
-  }*/
 }
-console.log(message.replace('!', ''));
+
 // Exporta os comandos para serem usados no index.js;
 module.exports = commands; 
