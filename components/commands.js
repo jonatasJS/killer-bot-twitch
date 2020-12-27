@@ -23,7 +23,7 @@ const commands = {
     bot.say(channel, 'As cores disponíveis são: lue, BlueViolet, CadetBlue, Chocolate, Coral, DodgerBlue, Firebrick, GoldenRod, Green, HotPink, OrangeRed, Red, SeaGreen, SpringGreen, YellowGreen')
   },
   setcolor() {
-    let messageE = message.replace('!setColor', '');
+    let messageE = message.replace('!setColor', '').replace(' ', '');
     let Colors = [ 'lue', 'BlueViolet', 'CadetBlue', 'Chocolate', 'Coral', 'DodgerBlue', 'Firebrick', 'GoldenRod', 'Green', 'HotPink', 'OrangeRed', 'Red', 'SeaGreen', 'SpringGreen', 'YellowGreen' ]
     
     if(Colors.includes(messageE)) {
