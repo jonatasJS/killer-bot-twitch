@@ -20,7 +20,7 @@ const commands = {
     bot.say(channel, `/me @${tag['display-name']} Eles são: !pc, !comandos ou !cmds`);
   },
   color() {
-    let messageE = message.replace('!', '');
+    let messageE = message.replace('!color', '');
     if(tag['display-name'] == 'sozinhol' || tag['display-name'] == 'sozinhoL') {
       bot.say(channel, `/color ${messageE}`);
     } else {
