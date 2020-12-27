@@ -4,6 +4,7 @@ const chat = require('../server');
 // Separa as informaçoes obtidas do index.js;
 const bot = chat.bot;
 const channel = chat.channel;
+const message = chat.message;
 const tag = chat.tag;
 
 // Váriavel que contem todos os comandos e as açoes dos mesmos;
@@ -18,7 +19,10 @@ const commands = {
   cmds() {
     bot.say(channel, `/me @${tag['display-name']} Eles são: !pc, !comandos ou !cmds`);
   }
+  /*color() {
+    bot.say(channel, `/color ${message}`);
+  }*/
 }
-
+console.log(message);
 // Exporta os comandos para serem usados no index.js;
 module.exports = commands; 
