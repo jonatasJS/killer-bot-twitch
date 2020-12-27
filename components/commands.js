@@ -24,9 +24,9 @@ const commands = {
   },
   setColor() {
     let messageE = message.replace('!setColor', '');
-    let colors = [ 'lue', 'BlueViolet', 'CadetBlue', 'Chocolate', 'Coral', 'DodgerBlue', 'Firebrick', 'GoldenRod', 'Green', 'HotPink', 'OrangeRed', 'Red', 'SeaGreen', 'SpringGreen', 'YellowGreen' ]
+    let Colors = [ 'lue', 'BlueViolet', 'CadetBlue', 'Chocolate', 'Coral', 'DodgerBlue', 'Firebrick', 'GoldenRod', 'Green', 'HotPink', 'OrangeRed', 'Red', 'SeaGreen', 'SpringGreen', 'YellowGreen' ]
     
-    if(colors.includes(messageE)) {
+    if(Colors.includes(messageE)) {
       if(tag['display-name'] == 'sozinhol' || tag['display-name'] == 'sozinhoL') {
         console.log(messageE);
         bot.say(channel, `/color ${messageE}`);
