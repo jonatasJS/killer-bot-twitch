@@ -21,7 +21,7 @@ const bot = new tmi.Client({
   channels: config.channels
 });
 
-client.on('connected', (channel, tag, message, self) => {
+bot.on('connected', (channel, tag, message, self) => {
   bot.say(config.channels[0], 'Estou On!');
   bot.say(config.channels[0], '/color black');
 });
