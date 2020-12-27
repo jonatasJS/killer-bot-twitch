@@ -19,7 +19,10 @@ const commands = {
   cmds() {
     bot.say(channel, `/me @${tag['display-name']} Eles são: !pc, !comandos ou !cmds`);
   },
-  color() {
+  colors() {
+    bot.say(channel, 'As cores disponíveis são: lue, BlueViolet, CadetBlue, Chocolate, Coral, DodgerBlue, Firebrick, GoldenRod, Green, HotPink, OrangeRed, Red, SeaGreen, SpringGreen, YellowGreen')
+  },
+  setColor() {
     let messageE = message.replace('!color', '');
     if(tag['display-name'] == 'sozinhol' || tag['display-name'] == 'sozinhoL') {
       console.log(messageE);
