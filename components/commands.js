@@ -23,7 +23,7 @@ const commands = {
     bot.say(channel, 'As cores disponíveis são: lue, BlueViolet, CadetBlue, Chocolate, Coral, DodgerBlue, Firebrick, GoldenRod, Green, HotPink, OrangeRed, Red, SeaGreen, SpringGreen, YellowGreen')
   },
   setColor() {
-    let messageE = message.replace('!color', '');
+    let messageE = message.replace('!setColor', '');
     if(tag['display-name'] == 'sozinhol' || tag['display-name'] == 'sozinhoL') {
       console.log(messageE);
       bot.say(channel, `/color ${messageE}`);
