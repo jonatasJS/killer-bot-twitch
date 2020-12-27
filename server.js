@@ -22,7 +22,7 @@ const bot = new tmi.Client({
 });
 
 client.on('connected', (channel, tag, message, self) => {
-  
+  bot.say(config.channels[0], '/color black');
 });
 
 // Execultar oc comandos;
